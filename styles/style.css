@@ -1,0 +1,785 @@
+/* main setup  */
+
+@font-face {
+    font-family: "Audi";
+    src: url("AudiTypeScreen-Normal.ttf");
+
+}
+
+body
+{
+    font-family:  Audi, Verdana;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url('../images/indexSplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    color: #ffffff;
+}
+
+nav
+{
+    position: fixed;
+    top: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: #000000;
+    z-index: 10;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+nav #navLogo
+{
+    width: 18vw;
+}
+
+nav img
+{
+    width: 12vw;
+
+}
+
+nav a
+{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+    vertical-align: top;
+    padding-left: .7em;
+}
+
+nav a .menuButton, nav > div .menuButton
+{
+    display: block;
+    height: auto;
+    margin-top: 1.3em;
+    vertical-align: middle;
+}
+
+nav > div
+{
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+nav > div .underLine
+{
+    height: 2px;
+    margin-top: .4em;
+    background: white;
+    width: 100%;
+
+}
+
+nav a .underLine
+{
+    width: 0px;
+    height: 2px;
+    margin-top: .4em;
+    background: white;
+    transition: width 250ms ease-in;
+}
+
+
+nav a:hover .underLine
+{
+    width: 100%;
+}
+
+nav #menuIcon
+{
+    display: none;
+}
+
+
+/* setup for landing page */
+
+.splashButton
+{
+    color: #ffffff;
+    background: #353535;
+    height: 10vh;
+    width: 20vw;
+    position: relative;
+    top: 90vh;
+    opacity: 0.9;
+    display: inline-block;
+}
+
+.splashButton p
+{
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#overButton
+{
+    float: right;
+}
+
+#overButton:hover
+{
+    outline: 1px solid;
+}
+
+#waarButton:hover
+{
+    outline: 1px solid;
+}
+
+.splashArt
+{
+    display: inline-block;
+    position: fixed;
+    background-color:#000000;
+    width: 70%;
+    height: 70vh;
+    top: 20vh;
+    color:#ffffff;
+    opacity: .9;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    transition: transform 500ms ease-in-out;
+    overflow: visible;
+    padding-left: 5%;
+    padding-right: 5%;
+    vertical-align: top;
+}
+
+.splashArt .map
+{
+    display: inline-block;
+    float: right;
+
+}
+
+.splashArt h4
+{
+    display: block;
+}
+
+.splashArt p
+{
+    display: inline-block;
+}
+
+.splashArt #aboutText
+{
+    width: 50%
+}
+.splashArt img
+{
+    float: right;
+}
+
+.splashArt .splashMap
+{
+    display: inline-block;
+    width: 70%;
+    height:70%;
+    float: right;
+    background-image: url("../images/mapMacro.jpg");
+    background-repeat: repeat-x;
+}
+
+.splashArt .splashMap:hover
+{
+    background-image: url("../images/mapMicro.jpg");
+}
+
+.splashArt:target
+{
+    transform: translate(-50%, 0);
+}
+
+@media only screen and (max-width: 955px)
+{
+    nav  img:first-of-type, nav > img:last-of-type
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    nav > img, nav a .menuButton, nav div .menuButton
+    {
+        display: none;
+    }
+
+    nav > a, nav > div
+    {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 9vw;
+        height: 10vw;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: 3vh;
+        padding: 2vh;
+        margin-right: 1vw;
+        border: 3px solid #353535;
+        border-radius: 5px;
+    }
+
+    nav > #homePage
+    {
+        background-image: url("../images/icons/homeIcon.svg");
+    }
+
+    nav > #salePage
+    {
+        background-image: url("../images/icons/carIcon.svg");
+    }
+
+    nav > #servicePage
+    {
+        background-image: url("../images/icons/wrenchIcon.svg");
+    }
+
+    nav > #appointPage
+    {
+        background-image: url("../images/icons/calendarIcon.svg");
+    }
+
+    nav > #jobPage
+    {
+        background-image: url("../images/icons/jobIcon.svg");
+    }
+
+    nav > #faqPage
+    {
+        background-image: url("../images/icons/faqIcon.svg");
+    }
+
+
+    body
+    {
+        background-image: none;
+
+    }
+
+    /* index.html specific */
+    .splashArt
+    {
+        display: block;
+        position: relative;
+        transform: translate(-50%,0);
+        overflow: visible;
+        height: auto;
+        background-color: #353535;
+    }
+    .splashArt > img
+    {
+        max-width: 100%;
+    }
+    .splashButton
+    {
+        display: none;
+    }
+
+    nav:target
+    {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    nav:target a, nav:target > div, nav:target > #menuIcon
+    {
+        position: relative;
+        display: block;
+        height: 10vh;
+
+    }
+
+
+
+
+}
+
+
+/* setup verkoop */
+
+#verkoopType
+{
+    display: inline-block;
+    position: fixed;
+    background-color:#000000;
+    width: 60%;
+    height: 100%;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 20vh;
+    color:#ffffff;
+    opacity: .9;
+    overflow: visible;
+    padding-left: 5%;
+    padding-right: 5%;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+
+#verkoopType div
+{
+    display: inline-block;
+    opacity: .8;
+    vertical-align: top;
+}
+
+#verkoopType div:hover
+{
+    opacity: 1;
+}
+
+#verkoopType div h4
+{
+    color: #ffffff;
+    background-color: #353535;
+}
+
+#verkoopType #nieuwBG
+{
+    height: 100%;
+    width: 33%;
+
+    background: url('../images/newCarsBG.png');
+    background-repeat: no-repeat;
+}
+
+#verkoopType #stockBG
+{
+
+    height: 100%;
+    width: 30%;
+    background: url('../images/stockBG.jpg');
+    background-repeat: no-repeat;
+}
+
+
+#verkoopType #occasBG
+{
+    height: 100%;
+    width: 30%;
+    background: url('../images/ocasBG.jpg');
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 680px) {
+    #verkoopType
+    {
+        width: 80vw;
+
+    }
+
+    #verkoopType div
+    {
+        opacity: 1;
+    }
+}
+
+
+/* setup nieuwe wagens  */
+#nieuwBody
+{
+    background-image: none;
+}
+
+.introSection
+{
+    padding-top: 20vh;
+    color: #ffffff;
+}
+
+.introSection h3
+{
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 10%;
+    border-right: solid 1px;
+}
+
+.introSection p
+{
+    display: inline-block;
+    padding-left: 2.5%;
+}
+
+#newContainer
+{
+    text-align: center;
+}
+
+.modelItem
+{
+    display: inline-block;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #353535;
+    height: 250px;
+    width: 350px;
+    vertical-align: top;
+}
+
+.modelItem h4
+{
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+    padding-left: 10px;
+
+}
+
+.modelItem p
+{
+
+    font-size: .8rem;
+    padding-left: 10px;
+}
+
+/* zij aanzicht niet hover */
+
+.modelItem img
+{
+    width: 75%;
+
+    float: right;
+}
+
+/* vooraanzicht zichtbaar hover */
+
+.modelItem img:last-of-type
+{
+    display: none;
+}
+
+.modelItem p:last-of-type
+{
+    display:none;
+}
+
+.modelItem a
+{
+    color: #ffffff;
+    border: solid 1px;
+    border-radius: 0;
+    text-decoration: none;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+}
+
+.modelItem:hover a
+{
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.modelItem:hover img:first-of-type
+{
+    display: none
+}
+
+.modelItem:hover img:last-of-type
+{
+    display: inline-block;
+    width: 50%;
+}
+
+.modelItem:hover p:first-of-type
+{
+    display: none;
+}
+
+.modelItem:hover p:last-of-type
+{
+    display: inline-block;
+}
+
+.modelItem a:hover
+{
+    color: #353535;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .modelItem a
+    {
+        display: inline-block;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+
+    .modelItem img:first-of-type
+    {
+        display: none
+    }
+
+    .modelItem img:last-of-type
+    {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .modelItem p:first-of-type
+    {
+        display: none;
+    }
+
+    .modelItem p:last-of-type
+    {
+        display: inline-block;
+    }
+
+    .modelItem a
+    {
+        display: inline-block;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+}
+
+
+/* model page classes */
+
+.carSplash
+{
+    margin-top: 30vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 50vh;
+
+}
+
+.carSplash .elementContainer
+{
+    display: block;
+}
+
+.carSplash h2
+{
+    display: inline-block;
+    padding: .7em;
+    margin-left: 1.4em;
+    background-color: #353535;
+    opacity: .9;
+    border: solid #ffffff 3px;
+}
+
+.carSplash a
+{
+    color: #ffffff;
+
+    text-decoration: none;
+    padding: .3em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: .9;
+    margin-top: 10vw;
+    margin-right: 10%;
+    float: right;
+    background-color: #353535;
+}
+
+.carSplash a:hover
+{
+    border: solid 1px;
+
+}
+#A1Splash
+{
+    background-image: url("../images/A1Backdrop.jpg");
+}
+
+#A3Splash
+{
+    background-image: url("../images/A3Backdrop.jpg");
+}
+
+#A4Splash
+{
+    background-image: url("../images/A4Backdrop.jpg");
+}
+
+#A5Splash
+{
+    background-image: url("../images/A5Backdrop.jpg");
+}
+
+#A6Splash
+{
+    background-image: url("../images/A6Backdrop.jpg");
+}
+
+#R8Splash
+{
+    background-image: url("../images/R8Backdrop.jpg");
+}
+.mainInfo
+{
+    display: inline-block;
+    margin-top: 1.4em;
+    margin-left: 5%;
+}
+
+.mainInfo article
+{
+    width: 40%;
+    min-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    transition: opacity 3s ease-out;
+
+}
+
+.mainInfo .bgInfo img
+{
+    width: 100%;
+
+}
+
+.mainInfo .bgInfo
+{
+    display: inline-block;
+    width: 50%;
+    min-width: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 2%;
+}
+
+/* stockwagens pagina */
+
+.stockContainer
+{
+    margin-top: 20vh;
+    padding-left: .7em;
+}
+
+.stockContainer article h2
+{
+    font-weight: normal;
+}
+
+.stockContainer ul
+{
+    display: inline-block;
+    list-style: none;
+    padding-left: .4em;
+    width: 40%;
+    vertical-align: top;
+}
+
+.stockContainer ul a li
+{
+    border-right: solid 1px;
+    border-top: solid 1px;
+    height: auto;
+    color: #ffffff;
+    padding-left: 5px;
+    opacity: 8;
+
+}
+
+.stockContainer ul li:hover
+{
+    background-color: #353535;
+
+}
+
+.stockContainer ul a
+{
+    text-decoration: none;
+}
+
+.stockContainer .stockItem
+{
+    display: none;
+    overflow: auto;
+    width: 50%;
+    background-color: #353535;
+    opacity: .8;
+    padding-left: .7em;
+}
+
+.stockContainer .stockItem img
+{
+    width: 75%;
+
+}
+
+.stockContainer .stockItem table
+{
+    width: 75%;
+}
+
+.stockContainer .stockItem table tr:last-of-type
+{
+    border-bottom:none;
+}
+
+.stockContainer .stockItem table tr td:first-of-type
+{
+    font-weight: bold;
+}
+
+.stockContainer .stockItem table tr td
+{
+    font-weight: normal;
+    border-bottom: solid 1px #ffffff;
+
+}
+
+.stockContainer .stockItem:target
+{
+    display: inline-block ;
+
+}
+
+/* 2de hands */
+#tweedehandsContainer
+{
+    position: relative;
+    background-color: #000000;
+    width: 80vw;
+    height: 100vh;
+    opacity: .8;
+    left: 50%;
+    top: 20vh;
+    transform: translate(-50%,0);
+}
+
+#tweedehandsContainer form
+{
+    border: solid 1px;
+
+}
+
+#tweedehandsContainer form h3
+{
+    margin-top: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#tweedehandsContainer > select
+{
+    background: grey;
+}
+
