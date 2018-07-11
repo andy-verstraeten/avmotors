@@ -39,7 +39,7 @@ nav #navLogo
 nav img
 {
     width: 12vw;
-
+    max-height: 20vh;
 }
 
 nav a
@@ -763,12 +763,13 @@ nav #menuIcon
     left: 50%;
     top: 20vh;
     transform: translate(-50%,0);
+    overflow: auto;
 }
 
 #tweedehandsContainer form
 {
     border: solid 1px;
-
+    margin: 1em;
 }
 
 #tweedehandsContainer form h3
@@ -778,8 +779,178 @@ nav #menuIcon
     padding-left: 1em;
 }
 
-#tweedehandsContainer > select
+#tweedehandsContainer  select
 {
     background: grey;
+    margin-bottom: 1em;
+    margin-left: 2em;
 }
 
+
+.formButton
+{
+    color: #ffffff;
+    background-color: #353535;
+    border: solid 1px;
+    border-radius: 0;
+    text-decoration: none;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 2vw;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.formButton:hover
+{
+    background-color: #9c9c9c;
+}
+
+#tweedehandsContainer #tableTitleBig
+{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+#tweedehandsContainer #tableTitleSmall
+{
+    display: inline-block;
+    border-left: 2px solid #ffffff;
+    padding-left: .5em;
+    margin-left: .5em;
+}
+
+#tweedehandsContainer table
+{
+    margin-left: 1em;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#tweedehandsContainer table tr
+{
+    border-bottom: solid 1px;
+
+}
+
+#tweedehandsContainer table th
+{
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+#tweedehandsContainer table td
+{
+    text-align: center;
+    font-size: .9em;
+}
+
+#tweedehandsContainer table tr:nth-of-type(even)
+{
+    background-color: #2b2b2b
+}
+
+#dienstenContainer
+{
+    position: relative;
+    background-color: #000000;
+    width: 80vw;
+    height: 80vh;
+    opacity: .8;
+    left: 50%;
+    top: 20vh;
+    transform: translate(-50%,0);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#dienstenContainer h3
+{
+    margin-left: 2em;
+
+}
+
+#dienstenContainer article
+{
+    padding-left: 1em;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#dienstenContainer img
+{
+    float:right;
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+
+}
+
+#dienstenContainer table
+{
+    border: solid 1px;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+}
+
+#dienstenContainer table th
+{
+    text-align: left;
+}
+
+#dienstenContainer article ul li span
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#dienstenContainer article ul li
+{
+    margin-top: .5em;
+}
+
+#afspraakContainer
+{
+    position: relative;
+    background-color: #000000;
+    width: 80vw;
+    height: 80vh;
+    opacity: .8;
+    left: 50%;
+    top: 20vh;
+    transform: translate(-50%,0);
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#afspraakContainer form
+{
+    border: solid 1px #ffffff;
+    margin: 0 1em 0 1em;
+}
+
+#afspraakContainer h3
+{
+    margin-left: 1em;
+}
+
+#afspraakContainer form label, #afspraakContainer form input, #afspraakContainer form select
+{
+    display: inline-block;
+    margin-left: 1em;
+    width: 40%;
+    margin-top: .5em;
+}
+
+#afspraakContainer select
+{
+    margin-bottom: 2em;
+}
+
+#afspraakContainer p
+{
+    margin-left: 1em;
+}

@@ -16,6 +16,7 @@
     <a href="faq.html" id="faqPage"><div class="menuButton">FAQ<div class="underLine"></div></div></a>
     <img src="images/AVMotorsLogo.png">
 </nav>
+
 <div id="tweedehandsContainer">
     <form>
         <h3>Filter de resultaten</h3>
@@ -28,6 +29,14 @@
         <option>A6</option>
     </select>
         <select>
+            <option selected disabled>Selecteer bouwjaar</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+        </select>
+        <select>
         <option selected disabled>Selecteer brandstof</option>
         <option>Diesel</option>
         <option>Benzine</option>
@@ -38,7 +47,54 @@
         <option>Leder</option>
         <option>Alcantara</option>
     </select>
+        <input type="submit" class="formButton" value="Toon resultaten">
     </form>
+    <h3 id="tableTitleBig">Tweedehands wagens</h3>
+    <h5 id="tableTitleSmall">Voor jou gefilterd.</h5>
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Bouwjaar</th>
+            <th>Brandstof</th>
+            <th>Interieur</th>
+            <th>PK</th>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>2014</td>
+            <td>Benzine</td>
+            <td>Alcantara</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>2016</td>
+            <td>Diesel</td>
+            <td>Leder</td>
+            <td>105</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+            <td>2013</td>
+            <td>Diesel</td>
+            <td>Stoffen</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td>A7</td>
+            <td>2016</td>
+            <td>Diesel</td>
+            <td>Leder</td>
+            <td>210</td>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>2016</td>
+            <td>Benzine</td>
+            <td>Alcantara</td>
+            <td>1</td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
